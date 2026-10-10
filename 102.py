@@ -1,0 +1,19 @@
+def fatorial(n, show=False):
+    if n < 0:
+        raise ValueError("O fatorial não é definido para números negativos")
+    elif n == 0 or n == 1:
+        if show:
+            print(f"{n}! = 1")
+        return 1
+    else:
+        resultado = 1
+        for i in range(2, n + 1):
+            resultado *= i
+            if show:
+                print(f"{i}! = {resultado}", end=' ')
+        return resultado
+
+
+print(fatorial(5, show=True))
+
+  
