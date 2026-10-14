@@ -14,6 +14,7 @@ def reverso():
         cont -= 1
         if cont < 1:
             break
+        
         yield cont
 
 def main(inicio, fim, passo):
